@@ -1,8 +1,8 @@
-package me.masahito.sleveldb
+package me.masahito
 
 import java.nio.file.Paths
-import LevelDBWrapper._
-import BytesUtils._
+import me.masahito.sleveldb.LevelDBWrapper._
+import me.masahito.sleveldb.BytesUtils._
 
 object BootStrap extends App {
   openAutoClose[Unit](Paths.get("example"), implicit db => {
